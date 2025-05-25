@@ -10,8 +10,7 @@ Make sure you have [Node.js](https://nodejs.org/) installed.
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone git@github.com:Znamm9/chatObrio.git
 
 # Install dependencies
 npm install
