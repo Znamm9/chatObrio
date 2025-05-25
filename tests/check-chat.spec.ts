@@ -8,7 +8,7 @@ import { ClientChatPage } from "../pageObjects/asknebula/clientChatPage.ts";
 import { CheckoutPage } from "../pageObjects/asknebula/checkoutPage.ts";
 import { ExpertChatPage } from "../pageObjects/astrocrm/ExpertchatPage.ts";
 
-test("has title", async ({ browser }) => {
+test("check user can chat with expert", async ({ browser }) => {
   test.setTimeout(120 * 1000); // Set timeout to 120 seconds
   // login as assistant
   const contextAssistant = await browser.newContext();
@@ -74,5 +74,4 @@ test("has title", async ({ browser }) => {
   // User can send messages to the expert and vice versa
   await clientChatPage.sendMessage("test123");
   await expect(clientChatPage.chatMessage).toHaveText("test123");
-
 });

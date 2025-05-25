@@ -27,6 +27,5 @@ export class CheckoutPage extends BasePage {
     } else {
       throw new Error("Payment form iframe not found");
     }
-
   }
 }
